@@ -11,9 +11,20 @@ objectives:
       pass:
         - criteria:
             - <2000
+            - <=+10%
       warning:
         - criteria:
             - <5000
+      weight: 1
+      key_sli: false
+    - sli: error_rt
+      displayName: ""
+      pass:
+        - criteria:
+            - <1.5%
+      warning:
+        - criteria:
+            - <1%
       weight: 1
       key_sli: false
 total_score:
